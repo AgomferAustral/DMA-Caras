@@ -13,38 +13,48 @@ La cantidad y calidad de los datos hicieron diferencia en el rendimiento del mod
 La aplicacion caras esta dividida en dos partes: app (entrenamiento) y prod (produccion).
 
 Dentro de *caras/app* estan los notebooks de entrenamiento del modelo. Se pueden ejecutar desde main.ipynb o en forma individual en el orden indicado:
-notebooks = [
-    "deteccion.ipynb",
-    "aumentacion.ipynb",
-    "deteccionaumentada.ipynb",
-    "preprocesamiento.ipynb",
-    "separacion.ipynb",
-    "isomap.ipynb"
-    ]
+
+notebooks = [<br>
+    "deteccion.ipynb",<br>
+    "aumentacion.ipynb",<br>
+    "deteccionaumentadas.ipynb",<br>
+    "procesamiento.ipynb",<br>
+    "separacion.ipynb",<br>
+    "isomap.ipynb"<br>
+    "entrenamiento.ipynb"<br>
+]
+
 
 Dentro de *caras/prod* estan los notebooks de produccion, para la deteccion. Se pueden ejecutar desde produccion.ipynb o en forma individual en el orden indicado:
 
-notebooks = [
-  "deteccionprod.ipynb",
-  "procesamientoprod.ipynb"
-  ]
+notebooks = [<br>
+    "deteccionprod.ipynb",<br>
+    "procesamientoprod.ipynb",<br>
+    "clasificacion.ipynb"<br>
+]
 
 La estructura del proyecto es: 
 
-├── caras
-│   ├── app
+<pre>├── <font color="#729FCF"><b>caras</b></font>
+│   ├── <font color="#729FCF"><b>app</b></font>
 │   │   ├── aumentacion.ipynb
+│   │   ├── data.pkl
+│   │   ├── datos_isomap.csv
 │   │   ├── deteccionaumentadas.ipynb
 │   │   ├── deteccion.ipynb
+│   │   ├── entrenamiento.ipynb
+│   │   ├── isomap.ipynb
 │   │   ├── main.ipynb
-│   │   └── procesamiento.ipynb
-│   └── prod
+│   │   ├── procesamiento.ipynb
+│   │   ├── red.pkl
+│   │   └── resultados_isomap_detectadas.csv
+│   └── <font color="#729FCF"><b>prod</b></font>
+│       ├── clasificacion.ipynb
+│       ├── data.pkl
 │       ├── deteccionprod.ipynb
 │       ├── procesamientoprod.ipynb
-│       └── produccion.ipynb
-├── README.md
-
-
-
-
-
+│       ├── produccion.ipynb
+│       ├── README.md
+│       └── red.pkl
+└── README.md
+</pre>
