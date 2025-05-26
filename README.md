@@ -19,7 +19,6 @@ notebooks = [<br>
     "aumentacion.ipynb",<br>
     "deteccionaumentadas.ipynb",<br>
     "procesamiento.ipynb",<br>
-    "separacion.ipynb",<br>
     "isomap.ipynb"<br>
     "entrenamiento.ipynb"<br>
 ]
